@@ -10,6 +10,13 @@
     <title>Mi Página</title>
 
 </head>
+<style>
+    .card {
+    background-color: #808080; /* Gris oscuro */
+    color: white; /* Texto en color blanco */
+}
+
+</style>
 
 <body>
     <!-- Barra de navegación fija en la parte superior -->
@@ -94,6 +101,94 @@
             </div>
         </div>
     </div>
+    
+<!-- Primera Card -->
+<div class="conteiner">
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="card mb-4">
+                        <div style="background-color: rgb(9, 68, 219); color: #ffff;" class="card-header">
+                            <h6 class="text-center">AUTO EN DESCUENTO</h6>
+                        </div>
+                        <div class="card-body">
+                            <img style="border-radius: 50%; width: 150px;"
+                                 src="https://imgs.search.brave.com/lDOrCI1AUoZ1cpf1cxbMoAmohO70Oin8V9tfTSqH5fo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNDU5/MjYxOTA5L2VzL2Zv/dG8vZm9yZC1tdXN0/YW5nLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1Ub3Q0Rk5M/ZnlKNmI0cDUwelA2/NXBhbENWVTRZWm5t/d1FwUmVYbngyaWdR/PQ"
+                                 alt="">
+                            <p>Ford Mustang Fastback de 1967</p>
+                            <p><strong>Diseño Fastback:</strong> La parte trasera inclinada le da un aspecto aerodinámico y agresivo.</p>
+                                <p><strong>Parrilla frontal:</strong> Con el emblema del caballo al centro, rodeado por una malla negra.</p>
+                                <p><strong>Faros redondos:</strong> Con luces auxiliares en la parte baja del parachoques.</p>
+                                <p><strong>Llantas clásicas:</strong> Con rines cromados y neumáticos de alto perfil.</p>
+                                <p><strong>Detalles laterales:</strong> Salidas de aire decorativas detrás de las puertas y una franja azul en la parte baja.</p>
+                                <p><strong>Color:</strong> Blanco con franjas decorativas en azul.</p>
+                                <p><strong>Motor:</strong> 390 V8.</p>
+                            
+                            <button class="btn btn-primary" type="button">Más información</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segunda Card -->
+                <div class="col-md-2">
+                    <div class="card">
+                        <div style="background-color: rgb(0, 0, 255); color: #ffffff;" class="card-header">
+                            <h6 class="text-center">AUTOS AGREGADOS RECIENTEMENTE</h6>
+                        </div>
+                        <div class="card-body">
+                            <img style="border-radius: 50%; width: 150px;"
+                            src="https://imgs.search.brave.com/lDOrCI1AUoZ1cpf1cxbMoAmohO70Oin8V9tfTSqH5fo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNDU5/MjYxOTA5L2VzL2Zv/dG8vZm9yZC1tdXN0/YW5nLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1Ub3Q0Rk5M/ZnlKNmI0cDUwelA2/NXBhbENWVTRZWm5t/d1FwUmVYbngyaWdR/PQ"
+                            alt="">
+                       <p>Ford Mustang Fastback de 1967</p>
+                       <img style="border-radius: 50%; width: 150px;"
+                            src="https://imgs.search.brave.com/mv2qyb0ML3bDnDYOAf81HxXfffQETN0qo3dJU0bW8zc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM0/MDc1NDc3MS9lcy9m/b3RvLzE5NjgtZm9y/ZC1zaGVsYnktY29i/cmEtbXVzdGFuZy1n/dDUwMC1mYXN0YmFj/ay5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9M2U5Mkx3QWFp/eUs2UHFjM2ZiamJY/dDBxcUJxNFY0STd2/Q01vcDdSNEQ2Yz0"
+                            alt="">
+                       <p>Shelby GT500 de 1968</p>
+                       <button class="btn btn-primary" type="button">Más información</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="card">
+                        <div style="background-color: rgb(0, 0, 255); color: #ffffff;" class="card-header">
+                            <h6 class="text-center">REGUISTRO</h6>
+                        </div>
+                        <div class="card-body">
+                            <form action="/submit" method="post">
+                                <label for="name">Nombre:</label>
+                                <input type="text" id="name" name="name" required><br><br>
+                    
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" id="email" name="email" required><br><br>
+                    
+                                <label for="city">Ciudad:</label>
+                                <select id="city" name="city">
+                                    <option value="">Ciudad de México (CDMX)</option>
+                                    <option value="">Oaxaca (Oaxaca)</option>
+                                    <option value="">Puebla (Puebla)</option>
+                                    <option value="">Monterrey (Nuevo León)</option>
+                                    <option value="">León (Guanajuato) </option>
+                                    <option value="">Morelia (Michoacán)</option>
+                                    <option value="">Cancún (Quintana Roo)</option>
+                                    <option value="">Tijuana (Baja California)</option>
+                                </select><br><br>
+                    
+                                <button class="btn btn-primary"><i class="fas fa-thumbs-up"></i> Enviar</button>
+                                
+                            </form>
+                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
